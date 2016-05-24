@@ -52,6 +52,6 @@ file {'motd':
   content => "Where is Waldo",
   mode    => '0664',
 }
-
+include memcached
 }
 
