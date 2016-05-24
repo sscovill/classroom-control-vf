@@ -3,7 +3,7 @@ ensure => file,
 owner => 'root',
 group => 'root',
 mode => '0644',
-source => 'puppet:///modules/memcached/memcached.conf',
+source => 'puppet:///modules/memcached/memcached',
 require => Package['ntp'],
 }
 package { 'memcached':
