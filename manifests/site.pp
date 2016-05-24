@@ -55,5 +55,5 @@ file {'motd':
 }
 
 include users
-
+}
 
