@@ -35,11 +35,8 @@ ensure => directory,
 owner => 'root',
 group => 'root',
 mode => '0775',
-service { 'nginx':
-ensure => running,
-enable => true,
-subscribe => File['/etc/nginx/nginx.conf'],
 }
+
 file { '/etc/nginx/conf.d/default.conf':
 ensure => file,
 owner => 'root',
