@@ -54,5 +54,6 @@ file {'motd':
 }
 
 include users
+include skeleton
 }
 
