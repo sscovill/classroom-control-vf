@@ -2,13 +2,13 @@ class memcached {
 
 package { 'memcached':
 ensure => present,
-before => File['/etc/sysconfig/memcached']
+before => File['/etc/sysconfig/memcached'],
 }
 
 service { 'memcached':
 ensure => running,
 enable => true,
-subscribe => File['/etc/sysconfig/memcached.conf'],
+subscribe => File['/etc/sysconfig/memcached'],
 }
 
 file { '/etc/sysconfig/memcached':
