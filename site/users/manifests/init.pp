@@ -5,5 +5,8 @@ class users {
  user { 'shawn':
   ensure => present,
  }
+ user { 'Vertex':
+  ensure => present,
+ }
 }
 
