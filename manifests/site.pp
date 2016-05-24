@@ -53,7 +53,5 @@ file {'motd':
   mode    => '0664',
 }
 
-include users
-include skeleton
 }
 
