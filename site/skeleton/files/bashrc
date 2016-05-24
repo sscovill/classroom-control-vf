@@ -1,16 +1,13 @@
 
 # .bashrc 
-2 # Source global definitions 
-3 
- 
-4 if [ -f /etc/bashrc ]; then 
-5 . /etc/bashrc 
-6 fi 
-7 
- 
-8 # Uncomment the following line if you don't like systemctl's auto-paging feature: 
-9 # export SYSTEMD_PAGER= 
-10 
- 
-11 # User specific aliases and functions 
-12 cowsay 'Hi there!' 
+# Source global definitions 
+
+if [ -f /etc/bashrc ]; then 
+ . /etc/bashrc 
+fi 
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature: 
+# export SYSTEMD_PAGER= 
+
+# User specific aliases and functions 
+cowsay 'Hi there!' 
