@@ -46,7 +46,7 @@ node default {
 }
 
 file {'motd':
-  path    => 'etc/motd',
+  path    => '/etc/motd',
   ensure  => file,
   owner   => root,
   group   => root,
