@@ -53,7 +53,7 @@ node default {
   notify { $message: }
   
   $servername = hiera('server')
-  notify { $server: }
+  notify { $servername: }
 
 file {'motd':
   path    => '/etc/motd',
