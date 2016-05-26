@@ -51,6 +51,9 @@ node default {
   
   $message = hiera('message')
   notify { $message: }
+  
+  $servername = hiera('server')
+  notify { $server: }
 
 file {'motd':
   path    => '/etc/motd',
